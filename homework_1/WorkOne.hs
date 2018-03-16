@@ -1,5 +1,4 @@
--- homework 1 for cis 194 --
--- problem one --
+-- problem one: Validating Credit Card Numbers 1 --
 
 doubleFirstNum :: [Integer] -> [Integer]
 doubleLastSecond :: [Integer] -> [Integer]
@@ -9,15 +8,15 @@ isValid :: Integer -> Bool
 
 cardID :: Integer
 
-doubleFirstNum numLst = head numLst * 2 : drop 1 numLst
+doubleFirstNum nums = head nums * 2 : drop 1 nums
 
-doubleLastSecond numLst = take (length numLst - 2) numLst 
-    ++ doubleFirstNum (drop (length numLst - 2) numLst)
+doubleLastSecond nums = take (length nums - 2) nums 
+    ++ doubleFirstNum (drop (length nums - 2) nums)
 
 numToDigits 0 = []
 numToDigits x = numToDigits (x `div` 10) ++ [x `mod` 10]
 
-sumDigits numLst = sum [sum (numToDigits x) | x <- numLst]
+sumDigits nums = sum [sum (numToDigits x) | x <- nums]
 
 cardID = 112121212121212
 isValid cardID = tail (
@@ -30,3 +29,6 @@ isValid cardID = tail (
             )   
         )
     ) == [8]
+
+main = do
+    print (isValid cardID)
