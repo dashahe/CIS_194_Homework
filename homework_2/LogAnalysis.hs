@@ -1,12 +1,6 @@
 -- CIS 194 Homework 2
 
-module LogAnalysis  (
-    parse
-   ,parseMessage
-   ,insert
-   ,build
-   ,inOrder
-) where
+module LogAnalysis where
 
 import Log
 
@@ -40,7 +34,7 @@ inOrder :: MessageTree -> [LogMessage]
 inOrder Leaf = []
 inOrder (Node left logMsg right) = inOrder left ++ [logMsg] ++ inOrder right
 
--- use pattern-matching to filter all non-error log messages
+-- use pattern-matching to filte all non-error log messages
 isRelevant :: LogMessage -> Bool
 isRelevant (LogMessage (Error t) _ _)
     | t > 50 = True
