@@ -1,3 +1,4 @@
+-- CIS 194 Homework5
 {-# LANGUAGE FlexibleInstances #-}
 
 module Calc where 
@@ -90,7 +91,7 @@ instance HasVars (M.Map String Integer -> Maybe Integer) where
 
 instance Expr (M.Map String Integer -> Maybe Integer) where
     lit a _ = Just a
-    add f g m = if isNothing (f m) || isNothing (g m)
+    add f g m = if isNothing  (f m) || isNothing (g m)
         then Nothing
         else Just (fromJust (f m) + fromJust (g m))
     mul f g m = if isNothing (f m) || isNothing (g m)

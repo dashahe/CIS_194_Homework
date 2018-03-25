@@ -1,4 +1,4 @@
--- CIS 194 Homework 2
+-- CIS 194 Homework 3
 -- my task is to make the code as short as possible
 module Golf where
 
