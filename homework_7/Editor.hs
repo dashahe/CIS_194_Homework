@@ -94,7 +94,7 @@ getCommand = io $ readCom <$> getLine
 doCommand :: Buffer b => Command -> Editor b ()
 doCommand View = do
   cur  <- getCurLine
-  let ls = [(cur - 2) .. (cur + 2)]
+  let ls = [(cur - 30) .. (cur + 30)]
   ss <- mapM (\l -> onBuffer $ line l) ls
   zipWithM_ (showL cur) ls ss
  where
