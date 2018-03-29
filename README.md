@@ -18,11 +18,11 @@
 
 - [x] Week 7 : Folds and monoids
 
-- [ ] Week 8 : IO
+- [x] Week 8 : IO
 
 - [x] Week 9 : Functors
 
-- [ ] Week 10 : Applicative functors (part 1)
+- [x] Week 10 : Applicative functors (part 1)
 
 - [ ] Week 11 : Applicative functors (part 2)
 
