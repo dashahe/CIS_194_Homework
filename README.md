@@ -24,7 +24,7 @@
 
 - [x] Week 10 : Applicative functors (part 1)
 
-- [ ] Week 11 : Applicative functors (part 2)
+- [x] Week 11 : Applicative functors (part 2)
 
 - [ ] Week 12 : Monads
 

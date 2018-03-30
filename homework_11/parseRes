@@ -1,0 +1,2 @@
+Just (Comb [A (I "define"),Comb [A (I "letterwords"),A (I "l"),A (I "sent")],Comb [A (I "keep"),Comb [A (I "lambda"),Comb [A (I "wd")],Comb [A (I "member"),A (I "l"),A (I "wd")]],A (I "sent")]],"")
+Just (Comb [A (I "define"),Comb [A (I "letterwords"),A (I "l"),A (I "sent")],Comb [A (I "keep"),Comb [A (I "lambda"),Comb [A (I "wd")],Comb [A (I "member"),A (I "l"),A (I "wd")]],A (I "sent")]],"")
